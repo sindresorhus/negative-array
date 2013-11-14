@@ -17,6 +17,8 @@ console.log(unicorn[-1]);
 // OMG, YES!
 ```
 
+> Proxies are objects for which the programmer has to define the semantics in JavaScript. The default object semantics are implemented in the JavaScript engine, often written in lower-level languages like C++. Proxies let the programmer define most of the behavior of an object in JavaScript. They are said to provide a meta-programming API.
+
 This should go without saying; **don't use in production.**
 
 
