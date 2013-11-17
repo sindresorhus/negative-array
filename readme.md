@@ -1,6 +1,6 @@
 # negative-array [![Build Status](https://secure.travis-ci.org/sindresorhus/negative-array.png?branch=gh-pages)](http://travis-ci.org/sindresorhus/negative-array)
 
-> Negative array index support using ES6 Proxy
+> Negative array index support `array[-1]` using ES6 Proxy
 
 JavaScript doesn't natively support the use of a negative index to get items backwards from the end, but with [ES6 Proxy](http://soft.vub.ac.be/~tvcutsem/proxies/) it's possible. Take a look at the source and see how simple it is to implement.
 

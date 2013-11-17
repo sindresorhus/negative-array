@@ -1,6 +1,6 @@
 /*!
 	negative-array
-	Negative array index support using ES6 Proxy
+	Negative array index support `array[-1]` using ES6 Proxy
 	https://github.com/sindresorhus/negative-array
 	by Sindre Sorhus
 	MIT License
