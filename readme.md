@@ -2,7 +2,7 @@
 
 > Negative array index support `array[-1]` using ES6 Proxy
 
-JavaScript doesn't natively support the use of a negative index to get items backwards from the end, but with [ES6 Proxy](http://soft.vub.ac.be/~tvcutsem/proxies/) it's possible. Take a look at the source and see how simple it is to implement.
+JavaScript doesn't natively support the use of a negative index to get items backwards from the end, but with [ES6 Proxy](http://soft.vub.ac.be/~tvcutsem/proxies/) it's possible. Take a look at the [source](https://github.com/sindresorhus/negative-array/blob/207b5858ed0261cc9a92a357ea7787b72abafcc7/negative-array.js#L21-L30) to see how simple it is to implement. There's also a [short article](http://dailyjs.com/2013/11/15/negative-array/) about it.
 
 ```js
 var negativeArray = require('negative-array');
