@@ -1,6 +1,6 @@
 {
   "name": "negative-array",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Negative array index support `array[-1]` using ES6 Proxy",
   "repo": "sindresorhus/negative-array",
   "keywords": [
@@ -15,6 +15,9 @@
     "harmony"
   ],
   "main": "negative-array.js",
-  "scripts": ["negative-array.js", "reflect.js"],
+  "scripts": [
+    "negative-array.js",
+    "reflect.js"
+  ],
   "license": "MIT"
 }

@@ -1,6 +1,6 @@
 {
   "name": "negative-array",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Negative array index support `array[-1]` using ES6 Proxy",
   "main": "negative-array.js",
   "keywords": [
