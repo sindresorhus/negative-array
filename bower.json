@@ -17,10 +17,11 @@
   "ignore": [
     ".*",
     "test.js",
+    "reflect.js",
     "component.json",
     "package.json"
   ],
   "dependencies": {
-    "harmony-reflect": "ba95e42821dbc4b1011f9e58d91651d9ed49bf26"
+    "harmony-reflect": "b288b6063b279b3e057220db34e512ceb727f0c7"
   }
 }

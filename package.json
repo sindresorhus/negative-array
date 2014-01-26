@@ -22,18 +22,18 @@
   "files": [
     "negative-array.js"
   ],
-  "main": "negative-array",
+  "main": "negative-array.js",
   "repository": "sindresorhus/negative-array",
   "scripts": {
     "test": "mocha --harmony"
   },
   "dependencies": {
-    "harmony-reflect": "0.0.10"
+    "harmony-reflect": "0.0.11"
   },
   "devDependencies": {
-    "mocha": "~1.14.0"
+    "mocha": "*"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   }
 }
