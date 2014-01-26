@@ -18,7 +18,7 @@
 			throw new Error('Input must be an array.');
 		}
 
-		return Proxy(arr, {
+		return new Proxy(arr, {
 			get: function (target, name) {
 				var i = +name;
 				return target[i < 0 ? target.length + i : i];
