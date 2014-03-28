@@ -1,4 +1,4 @@
-# negative-array [![Build Status](https://secure.travis-ci.org/sindresorhus/negative-array.png?branch=gh-pages)](http://travis-ci.org/sindresorhus/negative-array)
+# negative-array [![Build Status](https://travis-ci.org/sindresorhus/negative-array.svg?branch=master)](https://travis-ci.org/sindresorhus/negative-array)
 
 > Negative array index support `array[-1]` using ES6 Proxy
 
@@ -22,13 +22,6 @@ console.log(unicorn[-1]);
 This should go without saying; **don't use in production.**
 
 
-## Compatibility
-
-- Node 0.8.0 - with the harmony flag: `node --harmony`
-- Chrome - with the this flag enabled `chrome://flags/#enable-javascript-harmony` *(copy/paste into address-bar)*
-- Firefox 12
-
-
 ## [Demo](http://sindresorhus.com/negative-array)
 
 
@@ -36,25 +29,26 @@ This should go without saying; **don't use in production.**
 
 Download [manually](https://github.com/sindresorhus/negative-array/releases) or with a package-manager.
 
-#### [npm](https://npmjs.org/package/negative-array)
-
-```
-npm install --save negative-array
+```bash
+$ npm install --save negative-array
 ```
 
-#### [Bower](http://bower.io)
-
-```
-bower install --save negative-array
+```bash
+$ bower install --save negative-array
 ```
 
-#### [Component](https://github.com/component/component)
+```bash
+$ component install sindresorhus/negative-array
+```
 
-```
-component install sindresorhus/negative-array
-```
+
+## Compatibility
+
+- Node >=0.8.0 - with the harmony flag: `node --harmony`
+- Chrome - with the this flag enabled `chrome://flags/#enable-javascript-harmony` *(copy/paste into address-bar)*
+- Firefox >=12
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)

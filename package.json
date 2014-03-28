@@ -28,7 +28,7 @@
     "test": "mocha --harmony"
   },
   "dependencies": {
-    "harmony-reflect": "0.0.11"
+    "harmony-reflect": "^0.0.12"
   },
   "devDependencies": {
     "mocha": "*"
