@@ -1,4 +1,4 @@
-# negative-array [![Build Status](https://travis-ci.org/sindresorhus/negative-array.svg?branch=master)](https://travis-ci.org/sindresorhus/negative-array)
+# negative-array [![Build Status](https://travis-ci.org/sindresorhus/negative-array.svg?branch=gh-pages)](https://travis-ci.org/sindresorhus/negative-array)
 
 > Negative array index support `array[-1]` using ES6 Proxy
 
