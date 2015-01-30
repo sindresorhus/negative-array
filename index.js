@@ -16,4 +16,4 @@ module.exports = function (arr) {
 			return target[i < 0 ? target.length + i : i] = val;
 		}
 	});
-}
+};
