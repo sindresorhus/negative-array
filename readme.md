@@ -31,7 +31,7 @@ This should go without saying; **don't use in production.**
 
 ## Compatibility
 
-- Node >=0.8.0 - with the harmony flag: `node --harmony`
+- Node >=0.8.0: `node --harmony --harmony-proxies`
 - Chrome - with the this flag enabled `chrome://flags/#enable-javascript-harmony` *(copy/paste into address-bar)*
 - Firefox >=12
 
