@@ -1,7 +1,7 @@
 {
   "name": "negative-array",
   "version": "1.0.0",
-  "description": "Negative array index support `array[-1]` using ES6 Proxy",
+  "description": "Negative array index support `array[-1]` using ES2015 Proxy",
   "license": "MIT",
   "repository": "sindresorhus/negative-array",
   "author": {
@@ -26,8 +26,7 @@
     "reverse",
     "proxy",
     "proxies",
-    "es6",
-    "harmony"
+    "es2015"
   ],
   "dependencies": {
     "harmony-reflect": "^1.0.1"
