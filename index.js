@@ -5,7 +5,7 @@ module.exports = input => {
 		throw new TypeError('Expected an array');
 	}
 
-	return new global.Proxy(input, {
+	return new Proxy(input, {
 		get(target, name) {
 			if (typeof name !== 'string') {
 				return;

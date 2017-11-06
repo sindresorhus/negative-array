@@ -1,35 +1,35 @@
 {
-  "name": "negative-array",
-  "version": "2.0.0",
-  "description": "Negative array index support `array[-1]` using ES2015 Proxy",
-  "license": "MIT",
-  "repository": "sindresorhus/negative-array",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=6"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "array",
-    "negative",
-    "index",
-    "indice",
-    "reverse",
-    "proxy",
-    "proxies",
-    "es2015"
-  ],
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  }
+	"name": "negative-array",
+	"version": "2.0.0",
+	"description": "Negative array index support `array[-1]` using ES2015 Proxy",
+	"license": "MIT",
+	"repository": "sindresorhus/negative-array",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"array",
+		"negative",
+		"index",
+		"indice",
+		"reverse",
+		"proxy",
+		"proxies",
+		"es2015"
+	],
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
 }

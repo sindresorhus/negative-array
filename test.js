@@ -33,6 +33,8 @@ test('set values', t => {
 	t.is(fixture[2], -1);
 });
 
+// `t.deepEqual` can't handle Proxy objects:
+// https://github.com/avajs/ava/issues/1578
 // - test('set values', t => {
 // 	const fixture = m(['foo', 'bar', 'baz']);
 // 	fixture[0] = 0;
