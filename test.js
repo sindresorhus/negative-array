@@ -7,6 +7,10 @@ test('get values', t => {
 	t.is(fixture[1], 'bar');
 	t.is(fixture[-1], 'baz');
 	t.is(fixture[-2], 'bar');
+
+	t.is(fixture.length, 3);
+	t.is(typeof fixture.unknown, 'undefined');
+	t.is(fixture.map, Array.prototype.map);
 });
 
 test('set values', t => {
@@ -31,6 +35,12 @@ test('set values', t => {
 	t.is(fixture[0], 0);
 	t.is(fixture[1], -2);
 	t.is(fixture[2], -1);
+
+	fixture.a = 'a';
+	fixture.b = 'b';
+
+	t.is(fixture.a, 'a');
+	t.is(fixture.b, 'b');
 });
 
 // `t.deepEqual` can't handle Proxy objects:

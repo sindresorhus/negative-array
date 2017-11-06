@@ -13,7 +13,7 @@ module.exports = input => {
 
 			const index = Number(name);
 
-			return target[index < 0 ? target.length + index : index];
+			return target[index < 0 ? target.length + index : name];
 		},
 		set(target, name, value) {
 			if (typeof name !== 'string') {
@@ -22,7 +22,7 @@ module.exports = input => {
 
 			const index = Number(name);
 
-			target[index < 0 ? target.length + index : index] = value;
+			target[index < 0 ? target.length + index : name] = value;
 
 			return true;
 		}
