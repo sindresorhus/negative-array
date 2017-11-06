@@ -24,7 +24,7 @@ module.exports = input => {
 
 			target[index < 0 ? target.length + index : index] = value;
 
-			return true;
+			return value;
 		}
 	});
 };
