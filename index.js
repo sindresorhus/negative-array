@@ -6,23 +6,19 @@ module.exports = input => {
 	}
 
 	return new Proxy(input, {
-		get(target, name) {
-			if (typeof name !== 'string') {
+		get(target, index) {
+			if (typeof index !== 'string') {
 				return;
 			}
 
-			const index = Number(name);
-
-			return target[index < 0 ? target.length + index : index];
+			return target[index < 0 ? target.length - -index : index];
 		},
-		set(target, name, value) {
-			if (typeof name !== 'string') {
+		set(target, index, value) {
+			if (typeof index !== 'string') {
 				return;
 			}
 
-			const index = Number(name);
-
-			target[index < 0 ? target.length + index : index] = value;
+			target[index < 0 ? target.length - -index : index] = value;
 
 			return true;
 		}
