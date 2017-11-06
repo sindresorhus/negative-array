@@ -1,28 +1,52 @@
-'use strict';
-var assert = require('assert');
-var negativeArray = require('./');
-var testArr = negativeArray(['foo', 'bar', 'baz']);
+import test from 'ava';
+import m from '.';
 
-it('should get values', function () {
-	assert.strictEqual(testArr[0], 'foo');
-	assert.strictEqual(testArr[1], 'bar');
-	assert.strictEqual(testArr[-1], 'baz');
-	assert.strictEqual(testArr[-2], 'bar');
+test('get values', t => {
+	const fixture = m(['foo', 'bar', 'baz']);
+	t.is(fixture[0], 'foo');
+	t.is(fixture[1], 'bar');
+	t.is(fixture[-1], 'baz');
+	t.is(fixture[-2], 'bar');
 });
 
-it('should set values', function () {
-	testArr[0] = 0;
-	assert.deepEqual(testArr, [0, 'bar', 'baz']);
-	testArr[1] = 1;
-	assert.deepEqual(testArr, [0, 1, 'baz']);
-	testArr[-1] = -1;
-	assert.deepEqual(testArr, [0, 1, -1]);
-	testArr[-2] = -2;
-	assert.deepEqual(testArr, [0, -2, -1]);
+test('set values', t => {
+	const fixture = m(['foo', 'bar', 'baz']);
+
+	fixture[0] = 0;
+	t.is(fixture[0], 0);
+	t.is(fixture[1], 'bar');
+	t.is(fixture[2], 'baz');
+
+	fixture[1] = 1;
+	t.is(fixture[0], 0);
+	t.is(fixture[1], 1);
+	t.is(fixture[2], 'baz');
+
+	fixture[-1] = -1;
+	t.is(fixture[0], 0);
+	t.is(fixture[1], 1);
+	t.is(fixture[2], -1);
+
+	fixture[-2] = -2;
+	t.is(fixture[0], 0);
+	t.is(fixture[1], -2);
+	t.is(fixture[2], -1);
 });
 
-it('should only accept arrays', function () {
-	assert.throws(function () {
-		negativeArray({});
+// - test('set values', t => {
+// 	const fixture = m(['foo', 'bar', 'baz']);
+// 	fixture[0] = 0;
+// 	t.deepEqual(fixture, [0, 'bar', 'baz']);
+// 	fixture[1] = 1;
+// 	t.deepEqual(fixture, [0, 1, 'baz']);
+// 	fixture[-1] = -1;
+// 	t.deepEqual(fixture, [0, 1, -1]);
+// 	fixture[-2] = -2;
+// 	t.deepEqual(fixture, [0, -2, -1]);
+// });
+
+test('only accepts arrays', t => {
+	t.throws(() => {
+		m({});
 	});
 });

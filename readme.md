@@ -9,33 +9,24 @@ JavaScript doesn't natively support the use of a negative index to get items bac
 
 ## Usage
 
-```sh
-$ npm install --save negative-array
+```
+$ npm install negative-array
 ```
 
 ```js
-var negativeArray = require('negative-array');
+const negativeArray = require('negative-array');
 
-// adds negative array index support to any passed array
-var unicorn = negativeArray(['pony', 'cake', 'rainbow']);
+// Adds negative array index support to any given array
+const unicorn = negativeArray(['pony', 'cake', 'rainbow']);
 
-// get the last item by using an negative index
+// Get the last item by using a negative index
 console.log(unicorn[-1]);
-//=> rainbow
+//=> 'rainbow'
 
 // OMG, YES!
 ```
 
-This should go without saying; **don't use in production.**
-
-
-## Compatibility
-
-- Node >=0.8.0: `node --harmony --harmony-proxies`
-- Chrome - with the this flag enabled `chrome://flags/#enable-javascript-harmony` *(copy/paste into address-bar)*
-- Firefox >=12
-
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

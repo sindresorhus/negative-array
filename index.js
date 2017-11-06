@@ -1,19 +1,30 @@
 'use strict';
-require('harmony-reflect');
 
-module.exports = function (arr) {
-	if (!Array.isArray(arr)) {
+module.exports = input => {
+	if (!Array.isArray(input)) {
 		throw new TypeError('Expected an array');
 	}
 
-	return new Proxy(arr, {
-		get: function (target, name) {
-			var i = +name;
-			return target[i < 0 ? target.length + i : i];
+	return new global.Proxy(input, {
+		get(target, name) {
+			if (typeof name !== 'string') {
+				return;
+			}
+
+			const index = Number(name);
+
+			return target[index < 0 ? target.length + index : index];
 		},
-		set: function (target, name, val) {
-			var i = +name;
-			return target[i < 0 ? target.length + i : i] = val;
+		set(target, name, value) {
+			if (typeof name !== 'string') {
+				return;
+			}
+
+			const index = Number(name);
+
+			target[index < 0 ? target.length + index : index] = value;
+
+			return true;
 		}
 	});
 };
