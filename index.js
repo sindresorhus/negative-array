@@ -11,18 +11,14 @@ module.exports = input => {
 				return;
 			}
 
-			const index = Number(name);
-
-			return target[index < 0 ? target.length + index : index];
+			return target[name < 0 ? target.length - -name : name];
 		},
 		set(target, name, value) {
 			if (typeof name !== 'string') {
 				return;
 			}
 
-			const index = Number(name);
-
-			target[index < 0 ? target.length + index : index] = value;
+			target[name < 0 ? target.length - -name : name] = value;
 
 			return true;
 		}
