@@ -18,11 +18,11 @@ $ npm install negative-array
 const negativeArray = require('negative-array');
 
 // Adds negative array index support to any given array
-const unicorn = negativeArray(['pony', 'cake', 'rainbow']);
+const unicorn = negativeArray(['🐴', '🎂', '🌈']);
 
 // Get the last item by using a negative index
 console.log(unicorn[-1]);
-//=> 'rainbow'
+//=> '🌈'
 
 // OMG, YES!
 ```

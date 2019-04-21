@@ -1,11 +1,11 @@
 'use strict';
 
-module.exports = input => {
-	if (!Array.isArray(input)) {
+module.exports = array => {
+	if (!Array.isArray(array)) {
 		throw new TypeError('Expected an array');
 	}
 
-	return new Proxy(input, {
+	return new Proxy(array, {
 		get(target, name, receiver) {
 			if (typeof name !== 'string') {
 				return Reflect.get(target, name, receiver);
