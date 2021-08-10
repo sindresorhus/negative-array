@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = array => {
+export default function negativeArray(array) {
 	if (!Array.isArray(array)) {
 		throw new TypeError('Expected an array');
 	}
@@ -33,6 +31,6 @@ module.exports = array => {
 			target[index < 0 ? target.length + index : index] = value;
 
 			return true;
-		}
+		},
 	});
-};
+}

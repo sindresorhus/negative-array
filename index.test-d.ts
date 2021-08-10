@@ -1,9 +1,9 @@
-import {expectType, expectError} from 'tsd';
-import negativeArray = require('.');
+import {expectType, expectError, expectAssignable} from 'tsd';
+import negativeArray from './index.js';
 
 const readonlyArray = ['🐴', '🎂', '🌈'] as const;
 const array = ['🐴', '🎂', '🌈'];
 
-expectType<readonly string[]>(negativeArray(readonlyArray));
+expectAssignable<readonly string[]>(negativeArray(readonlyArray));
 expectError(negativeArray(readonlyArray).push('🦄'));
 expectType<string[]>(negativeArray(array));

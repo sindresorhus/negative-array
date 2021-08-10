@@ -1,5 +1,5 @@
 import test from 'ava';
-import negativeArray from '.';
+import negativeArray from './index.js';
 
 test('quacks like an array', t => {
 	const fixture = negativeArray(['foo', 'bar', 'baz']);
